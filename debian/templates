@@ -1,0 +1,15 @@
+Template: choose/profile
+Type: select
+Default: none
+Choices: ${choices}
+_Description: Choose Profile
+ The maker of this install/recovery image provide several choices for you.
+ If you do not understand them you either need to talk to the preparer (or
+ read their documentation) or choose another installer, Might I sugest Debian?
+
+Template: choose/choices
+Type: multiselect
+Description: for internal use
+ This template is never shown to the user and does not require translation.
+ It is only used for preseeding.
+
