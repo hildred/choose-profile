@@ -17,9 +17,9 @@ Architecture: all
 Depends: ${misc:Depends}, configured-network, choose-profile-bin
 XB-Installer-Menu-Item: 2250
 Description: Choose machine profile (menu item)
- This menu entry askes one question, pulls in aditional preseed values based
+ This menu entry asks one question, pulls in additional preseed values based
  on the result but leaves the heavy lifting for the preseed files. If the
- question it asks is preseeded it will just automatically pull in the aproprate
+ question it asks is preseeded it will just automatically pull in the appropriate
  additional preseed files. It is not useful and not shown if not setup in preseed.
 
 Package: install-data
@@ -28,7 +28,7 @@ Architecture: all
 Depends: ${misc:Depends}, configured-network, choose-profile-bin
 XB-Installer-Menu-Item: 7750
 Description: Install Data (menu item)
- This is a hook only menu entry that allows instalation of user data
+ This is a hook only menu entry that allows installation of user data
  It does not show up if not preseeded. Think of it as preseed/late-command
  with a progress bar, although it happens slightly earlier than late-command.
 
@@ -42,12 +42,12 @@ Package: choose-profile-documentation
 Architecture: all
 Depends:
 Description: documentation for choose profile
- Choose profile is a menu entry for debian installer
+ Choose profile is a menu entry for Debian installer
  that provides preseed customization to allow for dedicated
  function machines to be built entirely from the preseeded
  installer. Some typical uses would be for backup restores
  choosing which backup image to use or for a website deployment
  to choose which machine is being built. This is not useful in
- a non-preseed enviroment and is mostly useful there for asking
- one question durring install, although that question can also be
+ a non-preseed environment and is mostly useful there for asking
+ one question during install, although that question can also be
  preseeded if you just want the system data installer hook.
