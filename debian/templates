@@ -1,3 +1,13 @@
+Template: debian-installer/choose-profile/title
+Type: text
+#  Main menu item
+_Description: Choose Profile
+
+Template: debian-installer/local-data/title
+Type: text
+#  Main menu item
+_Description: Install local data
+
 Template: choose/profile
 Type: select
 Default: none
